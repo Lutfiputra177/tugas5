@@ -16,6 +16,10 @@
             <input name="alamat" type="text" placeholder="Masukkan alamat">
         </div>
         <div>
+            <label>TanggalLahir</label> <br>
+            <input name="TanggalLahit" type="text" placeholder="Masukkan TanggalLahir">
+        </div>
+        <div>
             <button>Submit</button>
         </div>
     </form>
@@ -23,6 +27,7 @@
 
     $nama = @$_GET['nama'];
     $alamat = @$_GET['alamat'];
+    $TanggalLahir = @$_GET['TanggalLahir'];
 
     # di sini nanti kita akan tampilkan variabel $nama dan $alamat
     if ($nama) {
@@ -32,7 +37,11 @@
     if ($alamat) {
         echo "<strong>Alamat:</strong> {$alamat} <br>";
     }
-
+    
+    if ($TanggalLahir) {
+        echo "<strong>TanggalLahir:</strong> {$TanggalLahir} <br>";
+    }
+    
     # jangan lupa tutup tag PHP
     ?>
 
