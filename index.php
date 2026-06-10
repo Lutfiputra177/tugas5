@@ -17,7 +17,11 @@
         </div>
         <div>
             <label>TanggalLahir</label> <br>
-            <input name="TanggalLahit" type="text" placeholder="Masukkan TanggalLahir">
+            <input name="TanggalLahir" type="text" placeholder="Masukkan TanggalLahir">
+        </div>
+        <div>
+            <label>Jenis_Kelamin</label> <br>
+            <input name="Jenis Kelamin" type="text" placeholder="Masukkan Jenis Kelamin">
         </div>
         <div>
             <button>Submit</button>
@@ -28,7 +32,7 @@
     $nama = @$_GET['nama'];
     $alamat = @$_GET['alamat'];
     $TanggalLahir = @$_GET['TanggalLahir'];
-
+    $Jenis_Kelamin = @$_GET['Jenis Kelamin'];
     # di sini nanti kita akan tampilkan variabel $nama dan $alamat
     if ($nama) {
         echo "<strong>Nama:</strong> {$nama} <br>";
@@ -40,6 +44,10 @@
     
     if ($TanggalLahir) {
         echo "<strong>TanggalLahir:</strong> {$TanggalLahir} <br>";
+    }
+
+       if ($Jenis_Kelamin) {
+        echo "<strong>Jenis Kelamin:</strong> {$Jenis_Kelamin} <br>";
     }
     
     # jangan lupa tutup tag PHP
