@@ -23,6 +23,10 @@
             <label>Jenis_Kelamin</label> <br>
             <input name="Jenis Kelamin" type="text" placeholder="Masukkan Jenis Kelamin">
         </div>
+          <div>
+            <label>nama_ortu</label> <br>
+            <input name="Nama Orang Tua" type="text" placeholder="Masukkan Nama Orang Tua">
+        </div>
         <div>
             <button>Submit</button>
         </div>
@@ -33,6 +37,7 @@
     $alamat = @$_GET['alamat'];
     $TanggalLahir = @$_GET['TanggalLahir'];
     $Jenis_Kelamin = @$_GET['Jenis Kelamin'];
+    $nama_ortu = @$_GET['Nama Orang tua'];
     # di sini nanti kita akan tampilkan variabel $nama dan $alamat
     if ($nama) {
         echo "<strong>Nama:</strong> {$nama} <br>";
@@ -49,6 +54,9 @@
        if ($Jenis_Kelamin) {
         echo "<strong>Jenis Kelamin:</strong> {$Jenis_Kelamin} <br>";
     }
+      if ($nama_ortu) {
+        echo "<strong>Nama Orang Tua:</strong> {$nama_ortu} <br>";
+    } 
     
     # jangan lupa tutup tag PHP
     ?>
